@@ -1,5 +1,5 @@
 FROM openjdk:17
-COPY COPY target/app-devops-0.0.1-SNAPSHOT.jar
+COPY target/app-devops-0.0.1-SNAPSHOT.jar
 EXPOSE 80
 CMD ["java", "-jar", "app-devops.jar", "--server.port=80"]
 
