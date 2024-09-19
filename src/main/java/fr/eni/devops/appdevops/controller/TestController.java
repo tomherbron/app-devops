@@ -13,7 +13,6 @@ public class TestController {
     @GetMapping
     public Object hello(){
         Map<String, String> object = new HashMap<>();
-
         object.put("name", "Formateur");
         object.put("email", "formateur@campus-eni.fr");
         object.put("Date", String.valueOf(LocalDate.now()));
