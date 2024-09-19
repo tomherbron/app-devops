@@ -42,7 +42,7 @@ jobs:
         run : echo ${{ secrets.DOCKER_HUB_TOKEN}} | docker login -u ${{secrets.DOCKER_HUB_USERNAME}} --password-stdin
 
       - name: Push Docker image
-        run : docker push denissanchez/${{ env.AZURE_WEBAPP_NAME }}
+        run : docker push tomherbron/${{ env.AZURE_WEBAPP_NAME }}
 
       - name: 'Deploy to Azure WebApp'
         uses: azure/webapps-deploy@v2
